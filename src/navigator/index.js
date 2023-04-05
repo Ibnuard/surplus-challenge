@@ -33,7 +33,13 @@ export const SplashStack = () => {
 export const AuthStackScreen = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="SignIn" component={LoginScreen} />
+      <Stack.Screen
+        name="SignIn"
+        component={LoginScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen name="SignUp" component={LoginScreen} />
     </Stack.Navigator>
   );

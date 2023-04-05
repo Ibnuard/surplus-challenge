@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
   },
 
   containerInactive: {
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
   },
 
   containerInvert: {
@@ -26,9 +26,9 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
     borderWidth: 2,
-    borderColor: Colors.COLOR_ACCENT,
+    borderColor: Colors.COLOR_PRIMARY,
   },
 
   containerInvertInactive: {
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
     borderWidth: 2,
     borderColor: Colors.COLOR_GRAY,
   },
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
 
   textTitleInvert: {
     ...Typo.TextNormalRegular,
-    color: Colors.COLOR_ACCENT,
+    color: Colors.COLOR_PRIMARY,
   },
 
   textTitleInvertInactive: {
