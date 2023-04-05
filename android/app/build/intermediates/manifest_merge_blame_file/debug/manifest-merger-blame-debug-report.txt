@@ -55,8 +55,8 @@
 32-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:15:9-41
 33            android:launchMode="singleTask"
 33-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:17:9-40
-34            android:windowSoftInputMode="adjustPan" >
-34-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-48
+34            android:windowSoftInputMode="adjustResize" >
+34-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-51
 35            <intent-filter>
 35-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:20:9-23:25
 36                <action android:name="android.intent.action.MAIN" />

@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
 
   scrollContainer: {
     flexGrow: 1,
+    paddingBottom: Scaler.scaleSize(64),
   },
 
   headerContainer: {
@@ -43,13 +44,14 @@ const styles = StyleSheet.create({
   },
 
   forgotPasswordContainer: {
-    alignItems: 'flex-end',
+    alignSelf: 'flex-end',
     marginTop: Size.SIZE_8,
   },
 
   dividerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginVertical: Size.SIZE_24,
   },
 
   divider: {
@@ -82,6 +84,7 @@ const styles = StyleSheet.create({
   bottomContainer: {
     flexDirection: 'row',
     alignSelf: 'center',
+    marginVertical: Size.SIZE_24,
   },
 
   registerButton: {
@@ -90,7 +93,6 @@ const styles = StyleSheet.create({
 
   buttonContainer: {
     flex: 1,
-    justifyContent: 'space-between',
     marginTop: Size.SIZE_24,
   },
   // === TEXT STYLE

@@ -11,7 +11,7 @@ const Input = props => {
 
   // ==== handle on empty value when input blur
   const handleOnEmptyValueBlur = () => {
-    if (props?.value?.length < 1) {
+    if (!props?.value?.length) {
       setIsError(true);
     } else {
       setIsError(false);
@@ -44,6 +44,11 @@ const Input = props => {
           </Touchable>
         ) : null}
       </View>
+      {isError ? (
+        <Text style={styles.textErrorMessage}>
+          {props?.errorMessage ?? 'error'}
+        </Text>
+      ) : null}
     </View>
   );
 };

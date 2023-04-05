@@ -40,6 +40,11 @@ const styles = StyleSheet.create({
     ...Typo.TextNormalBold,
     color: Colors.COLOR_RED,
   },
+
+  textErrorMessage: {
+    ...Typo.TextSmallRegular,
+    color: Colors.COLOR_RED,
+  },
 });
 
 export default styles;

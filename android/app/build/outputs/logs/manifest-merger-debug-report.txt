@@ -140,7 +140,7 @@ ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\And
 	android:launchMode
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:17:9-40
 	android:windowSoftInputMode
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-48
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-51
 	android:exported
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:19:9-32
 	android:configChanges
