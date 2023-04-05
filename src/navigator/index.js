@@ -2,8 +2,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/home';
 import ProfileScreen from '../screens/profile';
-import LoginScreen from '../screens/login';
+import BoardingScreen from '../screens/boarding';
 import SplashScreen from '../screens/splash';
+import SignInScreen from '../screens/signin';
 
 //create stack screen
 const Stack = createNativeStackNavigator();
@@ -34,13 +35,20 @@ export const AuthStackScreen = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="SignIn"
-        component={LoginScreen}
+        name="Boarding"
+        component={BoardingScreen}
         options={{
           headerShown: false,
         }}
       />
-      <Stack.Screen name="SignUp" component={LoginScreen} />
+      <Stack.Screen
+        name="SignIn"
+        component={SignInScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen name="SignUp" component={BoardingScreen} />
     </Stack.Navigator>
   );
 };

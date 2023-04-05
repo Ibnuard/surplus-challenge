@@ -5,7 +5,7 @@ import {IMAGES_RES} from '../../helper/images';
 import {Colors} from '../../styles';
 import styles from './styles';
 
-const LoginScreen = ({navigation}) => {
+const BoardingScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={Colors.COLOR_WHITE} />
@@ -24,7 +24,11 @@ const LoginScreen = ({navigation}) => {
             sia-sia
           </Text>
           <View style={styles.buttonContainer}>
-            <Button buttonStyle={styles.buttonRegister} title={'Daftar'} />
+            <Button
+              buttonStyle={styles.buttonRegister}
+              title={'Daftar'}
+              onPress={() => navigation.navigate('SignIn')}
+            />
             <Button invert title="Sudah punya akun? Masuk" />
           </View>
           <Text style={styles.textTerms}>
@@ -40,4 +44,4 @@ const LoginScreen = ({navigation}) => {
   );
 };
 
-export default LoginScreen;
+export default BoardingScreen;
