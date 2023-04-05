@@ -20,8 +20,18 @@ const styles = StyleSheet.create({
 
   topContainer: {
     height: '30%',
+    width: '65%',
     justifyContent: 'flex-end',
     paddingHorizontal: Size.SIZE_24,
+    paddingVertical: Size.SIZE_14,
+  },
+
+  mainContainer: {
+    flex: 1,
+    backgroundColor: Colors.COLOR_WHITE,
+    padding: Size.SIZE_24,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
   },
 });
 
