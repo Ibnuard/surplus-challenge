@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import Touchable from '../touchable';
 
 const Input = props => {
-  const [isSecured, setIsSecured] = React.useState(false);
+  const [isSecured, setIsSecured] = React.useState(true);
   const [isError, setIsError] = React.useState(false);
 
   // ==== handle on empty value when input blur
@@ -19,7 +19,7 @@ const Input = props => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={props?.containerStyle}>
       <Text style={isError ? styles.textLabelError : styles.textLabel}>
         {props?.label ?? 'Label'}
       </Text>
@@ -29,6 +29,7 @@ const Input = props => {
           {...props}
           style={styles.input}
           placeholderTextColor={Colors.COLOR_GRAY}
+          secureTextEntry={isSecured && props?.showEye}
           onBlur={() => {
             handleOnEmptyValueBlur();
           }}

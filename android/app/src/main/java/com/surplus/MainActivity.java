@@ -1,4 +1,4 @@
-package com.ardxreactnativeboilerplate;
+package com.surplus;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

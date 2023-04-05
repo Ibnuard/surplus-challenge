@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 
   containerInactive: {
     width: '100%',
-    backgroundColor: Colors.COLOR_GRAY,
+    backgroundColor: Colors.COLOR_LIGHT_GRAY,
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 20,
     borderWidth: 2,
-    borderColor: Colors.COLOR_GRAY,
+    borderColor: Colors.COLOR_LIGHT_GRAY,
   },
 
   //text style
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 
   textTitleInactive: {
     ...Typo.TextNormalRegular,
-    color: Colors.COLOR_DARK_GRAY,
+    color: Colors.COLOR_GRAY,
   },
 
   textTitleInvert: {
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
 
   textTitleInvertInactive: {
     ...Typo.TextNormalRegular,
-    color: Colors.COLOR_DARK_GRAY,
+    color: Colors.COLOR_GRAY,
   },
 });
 
