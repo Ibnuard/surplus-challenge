@@ -5,7 +5,7 @@ import {IMAGES_RES} from '../../helper/images';
 import {Button, Input} from '../../components';
 import Touchable from '../../components/touchable';
 
-const SignInScreen = ({navigation}) => {
+const SignUpScreen = ({navigation}) => {
   const [email, setEmail] = React.useState();
   const [password, setPassword] = React.useState();
 
@@ -23,9 +23,9 @@ const SignInScreen = ({navigation}) => {
           />
         </View>
         <View style={styles.topContainer}>
-          <Text style={styles.textTitle}>Masuk</Text>
+          <Text style={styles.textTitle}>Daftar</Text>
           <Text style={styles.textDescription}>
-            Pastikan kamu sudah pernah membuat akun Surplus
+            Lengkapi isian untuk mendaftar
           </Text>
         </View>
 
@@ -44,6 +44,15 @@ const SignInScreen = ({navigation}) => {
               label={'Kata sandi'}
               placeholder={'Masukan kata sandi'}
               showEye
+              containerStyle={styles.input}
+              onChangeText={text => setPassword(text)}
+              value={password}
+              errorMessage={'Silahkan masukan kata sandi'}
+            />
+            <Input
+              label={'Kata sandi'}
+              placeholder={'Masukan kata sandi'}
+              showEye
               onChangeText={text => setPassword(text)}
               value={password}
               errorMessage={'Silahkan masukan kata sandi'}
@@ -55,7 +64,7 @@ const SignInScreen = ({navigation}) => {
 
           {/* BUTTON CONTAINER */}
           <View style={styles.buttonContainer}>
-            <Button disabled title="Masuk" />
+            <Button disabled title="Daftar" />
             <View style={styles.dividerContainer}>
               <View style={styles.divider} />
               <Text style={styles.textDivider}>Atau</Text>
@@ -81,12 +90,21 @@ const SignInScreen = ({navigation}) => {
                 <Text style={styles.textSocial}>Google</Text>
               </Touchable>
             </View>
+            <Text style={styles.textTerms}>
+              Dengan daftar atau masuk, Anda menerima{' '}
+              <Text
+                style={styles.textLink}
+                onPress={() => console.log('terms')}>
+                syarat dan ketentuan
+              </Text>{' '}
+              serta <Text style={styles.textLink}>kebijakan privasi</Text>
+            </Text>
             <View style={styles.bottomContainer}>
-              <Text style={styles.textDontHaveAcc}>Belum punya akun?</Text>
+              <Text style={styles.textDontHaveAcc}>Sudah punya akun?</Text>
               <Touchable
                 style={styles.registerButton}
-                onPress={() => navigation.navigate('SignUp')}>
-                <Text style={styles.textRegister}>Yuk daftar</Text>
+                onPress={() => navigation.navigate('SignIn')}>
+                <Text style={styles.textRegister}>Yuk masuk</Text>
               </Touchable>
             </View>
           </View>
@@ -96,4 +114,4 @@ const SignInScreen = ({navigation}) => {
   );
 };
 
-export default SignInScreen;
+export default SignUpScreen;

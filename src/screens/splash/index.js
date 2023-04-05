@@ -1,6 +1,7 @@
 import * as React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StatusBar} from 'react-native';
 import {AuthContext} from '../../context';
+import {Colors} from '../../styles';
 import {retrieveData} from '../../utils/store';
 import {wait} from '../../utils/utils';
 import styles from './styles';
@@ -30,6 +31,10 @@ const SplashScreen = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar
+        backgroundColor={Colors.COLOR_WHITE}
+        barStyle={'dark-content'}
+      />
       <Text>SplashScreen</Text>
     </View>
   );

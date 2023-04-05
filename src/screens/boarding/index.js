@@ -8,7 +8,10 @@ import styles from './styles';
 const BoardingScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={Colors.COLOR_WHITE} />
+      <StatusBar
+        backgroundColor={Colors.COLOR_WHITE}
+        barStyle={'dark-content'}
+      />
       <View style={styles.backgroundContainer}>
         <Image
           source={IMAGES_RES.authBg}
@@ -27,9 +30,13 @@ const BoardingScreen = ({navigation}) => {
             <Button
               buttonStyle={styles.buttonRegister}
               title={'Daftar'}
+              onPress={() => navigation.navigate('SignUp')}
+            />
+            <Button
+              invert
+              title="Sudah punya akun? Masuk"
               onPress={() => navigation.navigate('SignIn')}
             />
-            <Button invert title="Sudah punya akun? Masuk" />
           </View>
           <Text style={styles.textTerms}>
             Dengan daftar atau masuk, Anda menerima{' '}

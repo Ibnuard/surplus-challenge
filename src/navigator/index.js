@@ -5,6 +5,7 @@ import ProfileScreen from '../screens/profile';
 import BoardingScreen from '../screens/boarding';
 import SplashScreen from '../screens/splash';
 import SignInScreen from '../screens/signin';
+import SignUpScreen from '../screens/signup';
 
 //create stack screen
 const Stack = createNativeStackNavigator();
@@ -48,7 +49,13 @@ export const AuthStackScreen = () => {
           headerShown: false,
         }}
       />
-      <Stack.Screen name="SignUp" component={BoardingScreen} />
+      <Stack.Screen
+        name="SignUp"
+        component={SignUpScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack.Navigator>
   );
 };
