@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
-        android:name="com.ardxreactnativeboilerplate.MainApplication"
+        android:name="com.surplus.MainApplication"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -26,12 +26,12 @@
             android:name="com.facebook.react.devsupport.DevSettingsActivity"
             android:exported="false" />
         <activity
-            android:name="com.ardxreactnativeboilerplate.MainActivity"
+            android:name="com.surplus.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="adjustResize" >
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

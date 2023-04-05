@@ -20,7 +20,7 @@
 14
 15    <application
 15-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:6:5-25:19
-16        android:name="com.ardxreactnativeboilerplate.MainApplication"
+16        android:name="com.surplus.MainApplication"
 16-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:7:7-38
 17        android:allowBackup="false"
 17-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:11:7-34
@@ -45,7 +45,7 @@
 27-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml:11:84-108
 28        <activity
 28-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:13:7-24:18
-29            android:name="com.ardxreactnativeboilerplate.MainActivity"
+29            android:name="com.surplus.MainActivity"
 29-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:14:9-37
 30            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
 30-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:16:9-118
@@ -55,8 +55,8 @@
 32-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:15:9-41
 33            android:launchMode="singleTask"
 33-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:17:9-40
-34            android:windowSoftInputMode="adjustResize" >
-34-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-51
+34            android:windowSoftInputMode="adjustPan" >
+34-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-48
 35            <intent-filter>
 35-->D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:20:9-23:25
 36                <action android:name="android.intent.action.MAIN" />
