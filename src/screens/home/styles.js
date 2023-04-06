@@ -33,9 +33,7 @@ const styles = StyleSheet.create({
     marginTop: Size.SIZE_14,
   },
 
-  mainContainer: {
-    flex: 1,
-  },
+  mainContainer: {flex: 1, paddingHorizontal: Size.SIZE_14},
 
   // === TEXT STYLE
 

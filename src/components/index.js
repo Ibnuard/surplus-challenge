@@ -3,5 +3,6 @@ import Card from './card';
 import Modal from './modal';
 import Input from './input';
 import SearchBar from './searchbar';
+import FoodCard from './foodcard';
 
-export {Button, Card, Modal, Input, SearchBar};
+export {Button, Card, Modal, Input, SearchBar, FoodCard};

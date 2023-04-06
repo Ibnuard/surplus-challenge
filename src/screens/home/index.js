@@ -3,10 +3,11 @@ import {View, Text, StatusBar, FlatList} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import styles from './styles';
 import Touchable from '../../components/touchable';
-import {SearchBar} from '../../components';
+import {FoodCard, SearchBar} from '../../components';
 import {Colors} from '../../styles';
 
 const HomeScreen = () => {
+  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9];
   return (
     <View style={styles.container}>
       <StatusBar
@@ -36,9 +37,14 @@ const HomeScreen = () => {
           />
         </View>
         {/* MAIN CONTAINER */}
-        <View style={styles.mainContainer}>
-          <FlatList />
-        </View>
+      </View>
+      <View style={styles.mainContainer}>
+        <FlatList
+          numColumns={3}
+          data={data}
+          showsVerticalScrollIndicator={false}
+          renderItem={({item, index}) => <FoodCard />}
+        />
       </View>
     </View>
   );
