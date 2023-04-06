@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-26:12
-MERGED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-26:12
+ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-27:12
+MERGED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-27:12
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\62857\.gradle\caches\transforms-3\85fdd9af1f70f27ec9080a3596d5a5c1\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\62857\.gradle\caches\transforms-3\ee6279daff0e353913f650ca1c1098c1\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\62857\.gradle\caches\transforms-3\2cade2aff8fbe74525993e45cf63412b\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
@@ -71,19 +71,19 @@ INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug
 INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml:2:1-13:12
 INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml:2:1-13:12
 	package
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:2:3-43
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:2:3-24
 		INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:2:3-43
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:2:3-24
 		INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-27:12
 		INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:1-27:12
 		INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -94,9 +94,9 @@ MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\62857\.gradle\caches
 	android:name
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:6:5-25:19
+ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:6:5-26:19
+MERGED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:6:5-26:19
+MERGED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:6:5-26:19
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\62857\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\62857\.gradle\caches\transforms-3\e1c107e7856bf5cdd6dba54e322b105b\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.3] C:\Users\62857\.gradle\caches\transforms-3\7924b8fa1a4cc2a22fb121b0c1d19ab1\transformed\jetified-soloader-0.10.3\AndroidManifest.xml:11:5-20
@@ -129,34 +129,34 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\62
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:12:7-38
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:12:7-38
 	android:usesCleartextTraffic
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\debug\AndroidManifest.xml:8:9-44
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:13:7-42
 	android:name
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:7:7-38
 		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:7:7-38
-activity#com.ardxreactnativeboilerplate.MainActivity
-ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:13:7-24:18
+activity#com.surplus.MainActivity
+ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:14:7-25:18
 	android:label
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:16:9-41
 	android:launchMode
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-40
 	android:windowSoftInputMode
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:18:9-51
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:19:9-51
 	android:exported
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:19:9-32
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:20:9-32
 	android:configChanges
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:16:9-118
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:17:9-118
 	android:name
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:14:9-37
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:15:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:20:9-23:25
+ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:21:9-24:25
 action#android.intent.action.MAIN
-ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:21:13-65
+ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:22:13-65
 	android:name
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:21:21-62
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:22:21-62
 category#android.intent.category.LAUNCHER
-ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:22:13-73
+ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:23:13-73
 	android:name
-		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:22:23-70
+		ADDED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml:23:23-70
 uses-sdk
 INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Dev\React Native\Surplus\SurplusChallenge\android\app\src\main\AndroidManifest.xml

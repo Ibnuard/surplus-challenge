@@ -1,12 +1,15 @@
-import * as React from 'react'
-import { View, Text } from 'react-native'
+import * as React from 'react';
+import {View, Text} from 'react-native';
+import {Button} from '../../components';
+import {AuthContext} from '../../context';
 
 const ProfileScreen = () => {
-    return (
-        <View>
-            <Text>ProfileScreen</Text>
-        </View>
-    )
-}
+  const {signOut} = React.useContext(AuthContext);
+  return (
+    <View>
+      <Button title="Logout" onPress={() => signOut()} />
+    </View>
+  );
+};
 
-export default ProfileScreen
+export default ProfileScreen;

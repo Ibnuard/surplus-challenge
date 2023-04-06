@@ -8,16 +8,16 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
   },
 
   containerInactive: {
     width: '100%',
-    backgroundColor: Colors.COLOR_GRAY,
+    backgroundColor: Colors.COLOR_LIGHT_GRAY,
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
   },
 
   containerInvert: {
@@ -26,9 +26,9 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
     borderWidth: 2,
-    borderColor: Colors.COLOR_ACCENT,
+    borderColor: Colors.COLOR_PRIMARY,
   },
 
   containerInvertInactive: {
@@ -37,9 +37,9 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 20,
     borderWidth: 2,
-    borderColor: Colors.COLOR_GRAY,
+    borderColor: Colors.COLOR_LIGHT_GRAY,
   },
 
   //text style
@@ -50,17 +50,17 @@ const styles = StyleSheet.create({
 
   textTitleInactive: {
     ...Typo.TextNormalRegular,
-    color: Colors.COLOR_DARK_GRAY,
+    color: Colors.COLOR_GRAY,
   },
 
   textTitleInvert: {
     ...Typo.TextNormalRegular,
-    color: Colors.COLOR_ACCENT,
+    color: Colors.COLOR_PRIMARY,
   },
 
   textTitleInvertInactive: {
     ...Typo.TextNormalRegular,
-    color: Colors.COLOR_DARK_GRAY,
+    color: Colors.COLOR_GRAY,
   },
 });
 
