@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Colors, Size} from '../../styles';
+import {Colors, Size, Typo} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
   },
 
   input: {
+    ...Typo.TextNormalRegular,
     flex: 1,
     marginRight: Size.SIZE_14,
   },

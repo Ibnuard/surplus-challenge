@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
 
   authBg: {
-    height: Scaler.scaleSize(400), // responseve image
+    height: '100%', // responseve image
     width: '100%',
   },
 

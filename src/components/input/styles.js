@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
   },
 
   input: {
+    ...Typo.TextNormalRegular,
     flex: 1,
   },
 

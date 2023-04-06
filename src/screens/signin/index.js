@@ -2,16 +2,41 @@ import {Text, View, Image, ScrollView} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import {IMAGES_RES} from '../../helper/images';
-import {Button, Input} from '../../components';
+import {Button, Input, Modal} from '../../components';
 import Touchable from '../../components/touchable';
 import {AuthContext} from '../../context';
+import {wait} from '../../utils/utils';
 
 const SignInScreen = ({navigation}) => {
   const [email, setEmail] = React.useState();
   const [password, setPassword] = React.useState();
 
+  // == modal state
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [modalType, setModalType] = React.useState('loading');
+  const [modalMessage, setModalMessage] = React.useState('');
+
+  // === sample acc
+  const ACCOUNT = {
+    email: 'surplus@gmail.com',
+    password: '123456',
+  };
+
   // === auth context
   const {signIn} = React.useContext(AuthContext);
+
+  // === handle on sign in
+  const onSignButtonPressed = () => {
+    setIsLoading(true);
+
+    // == check email
+    if (email.toLowerCase() === ACCOUNT.email && password == ACCOUNT.password) {
+      wait(2000).then(() => signIn());
+    } else {
+      setModalMessage('Akun tidak dapat ditemukan, mohon periksa kembali!');
+      setModalType('popup');
+    }
+  };
 
   // ==== RENDER
   return (
@@ -59,7 +84,11 @@ const SignInScreen = ({navigation}) => {
 
           {/* BUTTON CONTAINER */}
           <View style={styles.buttonContainer}>
-            <Button disabled={false} title="Masuk" onPress={() => signIn()} />
+            <Button
+              disabled={!email || !password}
+              title="Masuk"
+              onPress={() => onSignButtonPressed()}
+            />
             <View style={styles.dividerContainer}>
               <View style={styles.divider} />
               <Text style={styles.textDivider}>Atau</Text>
@@ -96,6 +125,12 @@ const SignInScreen = ({navigation}) => {
           </View>
         </View>
       </View>
+      <Modal
+        visible={isLoading}
+        type={modalType}
+        message={modalMessage}
+        onPress={() => setIsLoading(false)}
+      />
     </ScrollView>
   );
 };

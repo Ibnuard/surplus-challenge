@@ -32,10 +32,11 @@ const SplashScreen = () => {
   return (
     <View style={styles.container}>
       <StatusBar
+        hidden
         backgroundColor={Colors.COLOR_WHITE}
         barStyle={'dark-content'}
       />
-      <Text>SplashScreen</Text>
+      <Text style={styles.textTitle}>Surplus Challenge</Text>
     </View>
   );
 };

@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
 
   scrollContainer: {
     flexGrow: 1,
+    backgroundColor: Colors.COLOR_WHITE,
     paddingBottom: Scaler.scaleSize(64),
   },
 
