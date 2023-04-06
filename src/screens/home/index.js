@@ -5,9 +5,29 @@ import styles from './styles';
 import Touchable from '../../components/touchable';
 import {FoodCard, SearchBar} from '../../components';
 import {Colors} from '../../styles';
+import {fetchAPI} from '../../api/apiUtils';
+import {GET_PRODUCTS, GET_RANDOM_MEALS} from '../../api/apis';
+import {API_METHOD} from '../../utils/constant';
+import {useFocusEffect} from '@react-navigation/native';
 
 const HomeScreen = () => {
-  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9];
+  const [productList, setProductList] = React.useState();
+
+  useFocusEffect(
+    React.useCallback(() => {
+      getAllProductList();
+    }, []),
+  );
+
+  // === get product list
+  const getAllProductList = async () => {
+    const data = await fetchAPI(GET_PRODUCTS, API_METHOD.GET);
+
+    if (data) {
+      setProductList(data);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <StatusBar
@@ -41,9 +61,11 @@ const HomeScreen = () => {
       <View style={styles.mainContainer}>
         <FlatList
           numColumns={3}
-          data={data}
+          data={productList}
           showsVerticalScrollIndicator={false}
-          renderItem={({item, index}) => <FoodCard />}
+          renderItem={({item, index}) => (
+            <FoodCard key={item + index} data={item} />
+          )}
         />
       </View>
     </View>

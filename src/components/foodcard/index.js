@@ -4,14 +4,17 @@ import styles from './styles';
 import BurgerSample from '../../../assets/images/burgerSample.jpg';
 import Touchable from '../touchable';
 
-const FoodCard = () => {
+const FoodCard = ({data}) => {
+  console.log(data);
   return (
     <Touchable style={styles.container}>
       <Image source={BurgerSample} style={styles.image} resizeMode="cover" />
       <View style={styles.mainContainer}>
-        <Text style={styles.textTitle}>Judul</Text>
-        <Text style={styles.textDesc}>Desc</Text>
-        <Text style={styles.textPrice}>Price</Text>
+        <Text style={styles.textTitle} numberOfLines={2}>
+          {data?.title}
+        </Text>
+        <Text style={styles.textDesc}>{data?.category}</Text>
+        <Text style={styles.textPrice}>${data?.price}</Text>
       </View>
     </Touchable>
   );

@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
   textDesc: {
     ...Typo.TextSmallRegular,
     color: Colors.COLOR_GRAY,
+    paddingVertical: 4,
   },
 
   textPrice: {
