@@ -63,8 +63,17 @@ export const AuthStackScreen = () => {
 //tab stack screen
 export const MainScreen = () => {
   return (
-    <Tab.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
+    <Tab.Navigator
+      screenOptions={{
+        tabBarHideOnKeyboard: true,
+      }}>
+      <Stack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );

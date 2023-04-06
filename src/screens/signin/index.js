@@ -4,10 +4,14 @@ import styles from './styles';
 import {IMAGES_RES} from '../../helper/images';
 import {Button, Input} from '../../components';
 import Touchable from '../../components/touchable';
+import {AuthContext} from '../../context';
 
 const SignInScreen = ({navigation}) => {
   const [email, setEmail] = React.useState();
   const [password, setPassword] = React.useState();
+
+  // === auth context
+  const {signIn} = React.useContext(AuthContext);
 
   // ==== RENDER
   return (
@@ -55,7 +59,7 @@ const SignInScreen = ({navigation}) => {
 
           {/* BUTTON CONTAINER */}
           <View style={styles.buttonContainer}>
-            <Button disabled title="Masuk" />
+            <Button disabled={false} title="Masuk" onPress={() => signIn()} />
             <View style={styles.dividerContainer}>
               <View style={styles.divider} />
               <Text style={styles.textDivider}>Atau</Text>
