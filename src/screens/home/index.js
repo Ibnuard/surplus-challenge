@@ -1,17 +1,19 @@
 import * as React from 'react';
-import {View, Text, StatusBar, FlatList} from 'react-native';
+import {View, Text, StatusBar, FlatList, ActivityIndicator} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import styles from './styles';
 import Touchable from '../../components/touchable';
 import {FoodCard, SearchBar} from '../../components';
 import {Colors} from '../../styles';
 import {fetchAPI} from '../../api/apiUtils';
-import {GET_PRODUCTS, GET_RANDOM_MEALS} from '../../api/apis';
+import {GET_PRODUCTS} from '../../api/apis';
 import {API_METHOD} from '../../utils/constant';
 import {useFocusEffect} from '@react-navigation/native';
 
 const HomeScreen = () => {
   const [productList, setProductList] = React.useState();
+  const [search, setSearch] = React.useState('');
+  const [isLoading, setIsLoading] = React.useState(false);
 
   useFocusEffect(
     React.useCallback(() => {
@@ -21,11 +23,20 @@ const HomeScreen = () => {
 
   // === get product list
   const getAllProductList = async () => {
+    setIsLoading(true);
     const data = await fetchAPI(GET_PRODUCTS, API_METHOD.GET);
 
     if (data) {
       setProductList(data);
+      setIsLoading(false);
     }
+  };
+
+  // === filter product
+  const filterProduct = (data = []) => {
+    return data.filter((item, index) => {
+      return item?.title?.toLowerCase().includes(search.toLowerCase());
+    });
   };
 
   return (
@@ -54,19 +65,30 @@ const HomeScreen = () => {
           <SearchBar
             containerStyle={styles.searchBar}
             placeholder={'Mau selamatkan makanan apa hari ini?'}
+            onChangeText={text => setSearch(text)}
+            value={search}
           />
         </View>
         {/* MAIN CONTAINER */}
       </View>
       <View style={styles.mainContainer}>
-        <FlatList
-          numColumns={3}
-          data={productList}
-          showsVerticalScrollIndicator={false}
-          renderItem={({item, index}) => (
-            <FoodCard key={item + index} data={item} />
-          )}
-        />
+        {isLoading ? (
+          <ActivityIndicator style={styles.loadingIndicator} />
+        ) : filterProduct(productList).length > 0 ? (
+          <FlatList
+            numColumns={3}
+            data={filterProduct(productList)}
+            showsVerticalScrollIndicator={false}
+            renderItem={({item, index}) => (
+              <FoodCard key={item + index} data={item} />
+            )}
+          />
+        ) : (
+          <View style={styles.noDataContainer}>
+            <Icon name="frowno" size={24} />
+            <Text style={styles.textNoData}>No Data</Text>
+          </View>
+        )}
       </View>
     </View>
   );

@@ -33,7 +33,19 @@ const styles = StyleSheet.create({
     marginTop: Size.SIZE_14,
   },
 
-  mainContainer: {flex: 1, paddingHorizontal: Size.SIZE_14},
+  mainContainer: {
+    flex: 1,
+    paddingHorizontal: Size.SIZE_14,
+    justifyContent: 'center',
+  },
+
+  loadingIndicator: {
+    alignSelf: 'center',
+  },
+
+  noDataContainer: {
+    alignItems: 'center',
+  },
 
   // === TEXT STYLE
 
@@ -51,6 +63,12 @@ const styles = StyleSheet.create({
   textWelcome: {
     ...Typo.TextLargeBold,
     color: Colors.COLOR_WHITE,
+  },
+
+  textNoData: {
+    ...Typo.TextNormalRegular,
+    color: Colors.COLOR_GRAY,
+    marginTop: Size.SIZE_14,
   },
 });
 
